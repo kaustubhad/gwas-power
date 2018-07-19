@@ -8,12 +8,12 @@ Uses formulae for power calculation presented in *Appendix A* of *Visscher PM, W
 * Calculates power by calculating the non-centrality parameter (NCP) of the chi-square statistic under the alternative.
 
 ## Parameters:
-* **n**		= Sample size (has to be >= 0)
+* **n**		= Sample size (has to be >= 0).
 * **qsq**	= Fraction of trait variance explained by the SNP (has to be between 0 and 1). Denoted as q^2 or q-squared; other studies use h^2 too, to indicate it's similarity with heritability.
 * **beta**	= Effect size of the SNP on the trait, in SD units. Only square of beta is used, so result is symmetric in +ve and -ve beta values. For simplicity, preferable to have all beta to be +ve.
 * **maf**	= Minor allele frequency of the SNP (between 0 and 0.5).
-* **het**	= Heterozygous genotype frequency. Equal to 2*maf*(1-maf) under Hardy-Weinberg Equilibrium. (has to be between 0 and 1, usually between 0 and 0.5).
-* **pval**	= P-value threshold for significance. Common values are 5E-8 (for genome-wide significance) or 1E-5 (for suggestive significance). (has to be between 0 and 1, >0 and <1).
+* **het**	= Heterozygous genotype frequency. Equal to 2\*maf\*(1-maf) under Hardy-Weinberg Equilibrium. (has to be between 0 and 1, usually between 0 and 0.5).
+* **pval**	= P-value threshold for significance. Common values are **5E-8** (for genome-wide significance) or **1E-5** (for suggestive significance). (has to be between 0 and 1, >0 and <1).
 
 ## Use as: 
 ```
