@@ -98,7 +98,7 @@ pow = power_beta_maf(beta = (5:10)/50, maf = (1:5)/10, n = 5000, pval=5E-8)
 ```
 
 ### 4. power_plot
-Plots a power matrix as heatmap
+Plots a power matrix as heatmap.
 * Need to provide X and Y axis labels in addition to the matrix.
 * Uses ggplot2 to plot.
 * Also requires packages reshape2 and RColorBrewer.
